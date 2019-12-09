@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@Styles.Render("~/Content/bootstrap")
+
+<div>
+    <h1>Weather API</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <form action="@Url.Action("Index", "Home")" method="post">
+            <label for="cityInput">Please enter a city: </label>
+            <input type="text" placeholder="i.e. miami" name="cityName" id="cityInput" value="" />
+            <button class="btn btn-primarty" tye="submit">Submit</button>
+        </form>
+    </div>
+
+</div>
